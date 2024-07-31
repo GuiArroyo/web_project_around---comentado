@@ -1,0 +1,72 @@
+/* Estiliza o conteúdo da imagem no popup */
+.popup__image-content {
+  position: fixed;  /* Fixa a posição do conteúdo na tela */
+  top: 47%;  /* Define a posição superior do conteúdo */
+  left: 50%;  /* Define a posição à esquerda do conteúdo */
+  transform: translate(-50%, -50%);  /* Centraliza o conteúdo horizontal e verticalmente */
+}
+
+/* Estiliza o botão de fechar o popup de imagem */
+.popup__image-button-closed {
+  width: 40px;  /* Define a largura do botão */
+  height: 40px;  /* Define a altura do botão */
+  position: absolute;  /* Posiciona o botão de forma absoluta */
+  top: -45px;  /* Define a posição superior do botão */
+  right: -45px;  /* Define a posição à direita do botão */
+  cursor: pointer;  /* Define o cursor como ponteiro ao passar sobre o botão */
+}
+
+/* Adiciona efeito de opacidade ao passar o mouse sobre o botão de fechar */
+.popup__image-button-closed:hover {
+  opacity: 50%;
+}
+
+/* Estiliza a imagem no popup */
+.popup__image-photo {
+  width: 433px;  /* Define a largura da imagem */
+  height: 540px;  /* Define a altura da imagem */
+  object-fit: cover;  /* Ajusta a imagem para cobrir todo o espaço do contêiner */
+}
+
+/* Estiliza o nome da imagem no popup */
+.popup__image-name {
+  font-size: 12px;  /* Define o tamanho da fonte */
+  line-height: 14.52px;  /* Define a altura da linha */
+  font-weight: 400;  /* Define a espessura da fonte */
+  color: #ffffff;  /* Define a cor do texto */
+  margin-top: 10px;  /* Define a margem superior */
+}
+
+/* Estiliza o overlay do popup */
+.popup__overlay {
+  position: fixed;  /* Fixa a posição do overlay na tela */
+  width: 100%;  /* Define a largura como 100% */
+  height: 100%;  /* Define a altura como 100% */
+  top: 0;  /* Define a posição superior como 0 */
+  left: 0;  /* Define a posição à esquerda como 0 */
+  background-color: rgb(0, 0, 0, 0.5);  /* Define a cor de fundo com opacidade */
+}
+
+/* Exibe o popup de imagem quando a classe popup__open está presente */
+.popup__open {
+  display: flex;  /* Define o display como flex */
+}
+
+/* Ajusta o conteúdo da imagem para telas com largura máxima de 590px */
+@media screen and (max-width: 590px) {
+  #popup-image {
+    top: 38%;  /* Define a posição superior do conteúdo */
+  }
+
+  .popup__image-photo {
+    width: 240px;  /* Define a largura da imagem */
+    height: 299px;  /* Define a altura da imagem */
+  }
+
+  .popup__image_button-closed {
+    width: 30px;  /* Define a largura do botão */
+    height: 30px;  /* Define a altura do botão */
+    top: -30px;  /* Define a posição superior do botão */
+    right: -30px;  /* Define a posição à direita do botão */
+  }
+}

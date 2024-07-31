@@ -1,0 +1,143 @@
+/* Estiliza o contêiner principal do perfil */
+.profile {
+  max-width: 882px; /* Largura máxima do contêiner */
+  color: #ffffff; /* Cor do texto */
+  margin: 40px auto 0; /* Margem superior de 40px, centralização horizontal automática e sem margem inferior */
+  display: grid; /* Define como grid layout */
+  grid-template-areas: "image text button"; /* Define as áreas do grid */
+  grid-template-columns: 120px auto auto; /* Define as colunas do grid */
+}
+
+/* Estiliza a imagem do perfil */
+.profile__image {
+  grid-area: image; /* Posiciona a imagem na área 'image' do grid */
+  border-radius: 50%; /* Torna a imagem circular */
+  max-width: 120px; /* Largura máxima da imagem */
+  max-height: 120px; /* Altura máxima da imagem */
+}
+
+/* Estiliza a área de informações do perfil */
+.profile__info {
+  max-width: 420px; /* Largura máxima da área de informações */
+  grid-area: text; /* Posiciona as informações na área 'text' do grid */
+  align-content: center; /* Centraliza o conteúdo verticalmente */
+  margin-left: 30px; /* Margem à esquerda de 30px */
+}
+
+/* Estiliza o nome do perfil */
+.profile__name {
+  font-size: 42px; /* Tamanho da fonte */
+  line-height: 56px; /* Altura da linha */
+  font-weight: 500; /* Espessura da fonte */
+  margin: 0; /* Remove a margem padrão */
+  display: flex; /* Define como flex container */
+}
+
+/* Estiliza o texto adicional do perfil */
+.profile__text {
+  text-overflow: ellipsis; /* Adiciona reticências no overflow do texto */
+  white-space: nowrap; /* Impede quebra de linha */
+  overflow: hidden; /* Oculta o overflow do texto */
+  margin: 0; /* Remove a margem padrão */
+}
+
+/* Estiliza o botão de editar o perfil */
+.profile__edit-button {
+  cursor: pointer; /* Define o cursor como ponteiro */
+  margin-left: 18px; /* Margem à esquerda de 18px */
+}
+
+/* Adiciona efeito de opacidade ao passar o mouse sobre o botão de editar */
+.profile__edit-button:hover {
+  opacity: 50%;
+}
+
+/* Estiliza a profissão do perfil */
+.profile__profession {
+  font-size: 18px; /* Tamanho da fonte */
+  line-height: 21.78px; /* Altura da linha */
+  font-weight: 400; /* Espessura da fonte */
+  margin: 0; /* Remove a margem padrão */
+  text-overflow: ellipsis; /* Adiciona reticências no overflow do texto */
+  white-space: nowrap; /* Impede quebra de linha */
+  overflow: hidden; /* Oculta o overflow do texto */
+}
+
+/* Estiliza o botão de adicionar no perfil */
+.profile__add-button {
+  grid-area: button; /* Posiciona o botão na área 'button' do grid */
+  max-width: 150px; /* Largura máxima do botão */
+  max-height: 50px; /* Altura máxima do botão */
+  align-self: center; /* Centraliza o botão verticalmente */
+  justify-self: end; /* Alinha o botão à direita */
+  cursor: pointer; /* Define o cursor como ponteiro */
+  width: 100%; /* Largura do botão */
+  height: 100%; /* Altura do botão */
+}
+
+/* Adiciona efeito de opacidade ao passar o mouse sobre o botão de adicionar */
+.profile__add-button:hover {
+  opacity: 50%;
+}
+
+/* Ajustes de estilo para telas com largura máxima de 900px */
+@media screen and (max-width: 900px) {
+  .profile {
+    margin: 0 15px; /* Define margens laterais de 15px */
+  }
+}
+
+/* Ajustes de estilo para telas com largura máxima de 730px */
+@media screen and (max-width: 730px) {
+  .profile__name {
+    font-size: 30px; /* Tamanho da fonte reduzido */
+    line-height: 36px; /* Altura da linha reduzida */
+    font-weight: 500; /* Espessura da fonte */
+    margin: 0; /* Remove a margem padrão */
+  }
+
+  .profile__profession {
+    font-size: 16px; /* Tamanho da fonte reduzido */
+    line-height: 19px; /* Altura da linha reduzida */
+    font-weight: 400; /* Espessura da fonte */
+  }
+}
+
+/* Ajustes de estilo para telas com largura máxima de 610px */
+@media screen and (max-width: 610px) {
+  .profile__add-button {
+    max-width: 100px; /* Largura máxima do botão reduzida */
+  }
+}
+
+/* Ajustes de estilo para telas com largura máxima de 550px */
+@media screen and (max-width: 550px) {
+  .profile {
+    display: flex; /* Define como flex container */
+    flex-direction: column; /* Define a direção do flex como coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+  }
+
+  .profile__info {
+    text-align: center; /* Centraliza o texto */
+    margin: 30px 0 36px; /* Define margens superior e inferior */
+  }
+
+  .profile__name {
+    font-size: 22px; /* Tamanho da fonte reduzido */
+    line-height: 26.63px; /* Altura da linha reduzida */
+    font-weight: 500; /* Espessura da fonte */
+  }
+
+  .profile__profession {
+    font-size: 14px; /* Tamanho da fonte reduzido */
+    line-height: 16.94px; /* Altura da linha reduzida */
+    font-weight: 400; /* Espessura da fonte */
+    margin-top: 14px; /* Define margem superior */
+  }
+
+  .profile__add-button {
+    max-width: 282px; /* Largura máxima do botão aumentada */
+  }
+}

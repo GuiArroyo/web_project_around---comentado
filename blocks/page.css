@@ -1,0 +1,6 @@
+/* Estiliza o contêiner principal da página */
+.page {
+  min-height: 100vh;  /* Define a altura mínima como 100% da altura da viewport */
+  background-color: #000000;  /* Define a cor de fundo preta */
+  font-family: "Inter";  /* Define a família de fontes como "Inter" */
+}

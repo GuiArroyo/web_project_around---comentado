@@ -1,0 +1,179 @@
+/* Esconde o popup por padrão */
+.popup {
+  display: none;  /* Define o display como none para esconder o popup */
+}
+
+/* Estiliza o formulário dentro do popup */
+.popup__form {
+  position: fixed;  /* Fixa a posição do formulário na tela */
+  display: flex;  /* Usa flexbox para organizar os elementos internos */
+  flex-direction: column;  /* Alinha os elementos internos em uma coluna */
+  width: 430px;  /* Define a largura do formulário */
+  background-color: #ffffff;  /* Define a cor de fundo como branca */
+  border-radius: 10px;  /* Define bordas arredondadas */
+  top: 23%;  /* Define a posição superior do formulário */
+  left: 33%;  /* Define a posição à esquerda do formulário */
+}
+
+/* Estiliza o botão de fechar o popup */
+.popup__button-closed {
+  position: absolute;  /* Posiciona o botão de forma absoluta */
+  top: -35px;  /* Define a posição superior do botão */
+  right: -35px;  /* Define a posição à direita do botão */
+  cursor: pointer;  /* Define o cursor como ponteiro ao passar sobre o botão */
+}
+
+/* Adiciona efeito de opacidade ao passar o mouse sobre o botão de fechar */
+.popup__button-closed:hover {
+  opacity: 50%;
+}
+
+/* Estiliza o cabeçalho do popup */
+.popup__header {
+  font-size: 24px;  /* Define o tamanho da fonte */
+  line-height: 29.05px;  /* Define a altura da linha */
+  font-weight: 900;  /* Define a espessura da fonte */
+  margin: 34px 0 0 36px;  /* Define as margens */
+}
+
+/* Estiliza o campo de nome no formulário */
+.popup__name {
+  max-width: 358px;  /* Define a largura máxima */
+  border: none;  /* Remove as bordas */
+  border-bottom: 1px solid #000000;  /* Adiciona uma borda inferior */
+  font-size: 14px;  /* Define o tamanho da fonte */
+  line-height: 16.94px;  /* Define a altura da linha */
+  font-weight: 400;  /* Define a espessura da fonte */
+  padding: 0px 0 10px;  /* Define o padding */
+  margin: 54px 0 0 36px;  /* Define as margens */
+}
+
+/* Estiliza o campo de descrição no formulário */
+.popup__description {
+  max-width: 358px;  /* Define a largura máxima */
+  border: none;  /* Remove as bordas */
+  border-bottom: 1px solid #000000;  /* Adiciona uma borda inferior */
+  padding: 0px 0 10px;  /* Define o padding */
+  font-size: 14px;  /* Define o tamanho da fonte */
+  line-height: 16.94px;  /* Define a altura da linha */
+  font-weight: 400;  /* Define a espessura da fonte */
+  margin: 30px 0 0 36px;  /* Define as margens */
+}
+
+/* Estiliza o botão de criar no formulário */
+.popup__button-create {
+  font-size: 18px;  /* Define o tamanho da fonte */
+  line-height: 21.78px;  /* Define a altura da linha */
+  font-weight: 400;  /* Define a espessura da fonte */
+  background-color: black;  /* Define a cor de fundo */
+  color: #ffffff;  /* Define a cor do texto */
+  max-width: 358px;  /* Define a largura máxima */
+  margin: 48px 36px 36px;  /* Define as margens */
+  padding: 15px 0;  /* Define o padding */
+  border-radius: 5px;  /* Define bordas arredondadas */
+  cursor: pointer;  /* Define o cursor como ponteiro ao passar sobre o botão */
+}
+
+/* Adiciona efeito de opacidade ao passar o mouse sobre o botão de criar */
+.popup__button-create:hover {
+  opacity: 80%;
+}
+
+/* Estiliza o botão de criar quando está desativado */
+.popup__button_disabled {
+  font-size: 18px;  /* Define o tamanho da fonte */
+  line-height: 21.78px;  /* Define a altura da linha */
+  font-weight: 400;  /* Define a espessura da fonte */
+  background-color: #ffffff;  /* Define a cor de fundo */
+  color: #000000;  /* Define a cor do texto */
+  opacity: 20%;  /* Define a opacidade */
+  pointer-events: none;  /* Desabilita os eventos de ponteiro */
+}
+
+/* Estiliza o overlay do popup */
+.popup__overlay {
+  position: fixed;  /* Fixa a posição do overlay na tela */
+  width: 100%;  /* Define a largura como 100% */
+  height: 100%;  /* Define a altura como 100% */
+  top: 0;  /* Define a posição superior como 0 */
+  left: 0;  /* Define a posição à esquerda como 0 */
+  background-color: rgb(0, 0, 0, 0.5);  /* Define a cor de fundo com opacidade */
+}
+
+/* Estiliza a mensagem de erro visível */
+.popup__error-visible {
+  color: red;  /* Define a cor do texto como vermelha */
+  font-size: 12px;  /* Define o tamanho da fonte */
+  font-weight: 400;  /* Define a espessura da fonte */
+  line-height: 15px;  /* Define a altura da linha */
+  margin: 2px 0 0 36px;  /* Define as margens */
+}
+
+/* Exibe o popup quando a classe popup__open está presente */
+.popup__open {
+  display: flex;  /* Define o display como flex */
+}
+
+/* Ajusta o formulário para telas com largura máxima de 880px */
+@media screen and (max-width: 880px) {
+  .popup__form {
+    top: 18%;  /* Define a posição superior do formulário */
+    left: 27%;  /* Define a posição à esquerda do formulário */
+  }
+}
+
+/* Ajusta o formulário para telas com largura máxima de 660px */
+@media screen and (max-width: 660px) {
+  .popup__form {
+    top: 19%;  /* Define a posição superior do formulário */
+    left: 20%;  /* Define a posição à esquerda do formulário */
+  }
+
+  .popup__button-closed {
+    top: -40px;  /* Define a posição superior do botão */
+    right: -1px;  /* Define a posição à direita do botão */
+  }
+}
+
+/* Ajusta o formulário para telas com largura máxima de 550px */
+@media screen and (max-width: 550px) {
+  .popup__form {
+    max-width: 282px;  /* Define a largura máxima do formulário */
+    top: 20%;  /* Define a posição superior do formulário */
+    left: 22%;  /* Define a posição à esquerda do formulário */
+  }
+
+  .popup__name {
+    max-width: 206px;  /* Define a largura máxima do campo de nome */
+  }
+
+  .popup__description {
+    max-width: 206px;  /* Define a largura máxima do campo de descrição */
+  }
+}
+
+/* Ajusta o formulário para telas com largura máxima de 430px */
+@media screen and (max-width: 430px) {
+  .popup__form {
+    top: 20%;  /* Define a posição superior do formulário */
+    left: 6%;  /* Define a posição à esquerda do formulário */
+  }
+
+  .popup__button-closed {
+    max-width: 26px;  /* Define a largura máxima do botão */
+    top: -40px;  /* Define a posição superior do botão */
+    right: -1px;  /* Define a posição à direita do botão */
+  }
+
+  .popup__header {
+    font-size: 18px;  /* Define o tamanho da fonte */
+    line-height: 21.78px;  /* Define a altura da linha */
+    font-weight: 900;  /* Define a espessura da fonte */
+  }
+
+  .popup__button-create {
+    font-size: 14px;  /* Define o tamanho da fonte */
+    line-height: 16.94px;  /* Define a altura da linha */
+    font-weight: 400;  /* Define a espessura da fonte */
+  }
+}

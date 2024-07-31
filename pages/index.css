@@ -1,0 +1,29 @@
+/* Importa o arquivo normalize.css para normalizar os estilos padrão dos navegadores */
+@import url(../vendor/normalize.css);
+
+/* Importa o arquivo fonts.css para carregar fontes customizadas */
+@import url(../vendor/fonts.css);
+
+/* Importa o arquivo page.css que contém os estilos globais da página */
+@import url(../blocks/page.css);
+
+/* Importa o arquivo header.css que contém os estilos do cabeçalho */
+@import url(../blocks/header.css);
+
+/* Importa o arquivo profile.css que contém os estilos do perfil do usuário */
+@import url(../blocks/profile.css);
+
+/* Importa o arquivo elements.css que contém os estilos dos elementos principais */
+@import url(../blocks/elements.css);
+
+/* Importa o arquivo popup.css que contém os estilos dos popups */
+@import url(../blocks/popup.css);
+
+/* Importa o arquivo popupaddcard.css que contém os estilos específicos para o popup de adicionar cartão */
+@import url(../blocks/popupaddcard.css);
+
+/* Importa o arquivo popupimage.css que contém os estilos específicos para o popup de imagem */
+@import url(../blocks/popupimage.css);
+
+/* Importa o arquivo footer.css que contém os estilos do rodapé */
+@import url(../blocks/footer.css);

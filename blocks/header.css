@@ -1,0 +1,21 @@
+/* Estiliza o contêiner principal do cabeçalho */
+.header {
+  max-width: 882px;  /* Define a largura máxima do cabeçalho */
+  padding: 45px 0 40px;  /* Adiciona espaçamento superior de 45px e inferior de 40px */
+  margin: 0 auto;  /* Centraliza o cabeçalho horizontalmente */
+  border-bottom: 1px solid #545454;  /* Adiciona uma borda inferior */
+}
+
+/* Ajusta o cabeçalho para telas com largura máxima de 900px */
+@media screen and (max-width: 900px) {
+  .header {
+    margin-left: 15px;  /* Adiciona margem à esquerda de 15px */
+  }
+}
+
+/* Ajusta o cabeçalho para telas com largura máxima de 550px */
+@media screen and (max-width: 550px) {
+  .header {
+    margin-left: 27px;  /* Adiciona margem à esquerda de 27px */
+  }
+}

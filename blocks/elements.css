@@ -1,0 +1,111 @@
+/* Estiliza o contêiner principal dos elementos */
+.elements {
+  max-width: 882px;  /* Define a largura máxima do contêiner */
+  margin: 0 auto;  /* Centraliza o contêiner horizontalmente */
+  padding: 50px 0 0;  /* Adiciona um espaçamento superior de 50px */
+  display: grid;  /* Utiliza o CSS Grid Layout */
+  grid-template-columns: repeat(3, 1fr);  /* Cria três colunas de largura igual */
+  gap: 15px;  /* Adiciona um espaçamento de 15px entre os elementos */
+}
+
+/* Remove padding e margin padrão do conteúdo dos elementos */
+.elements__content {
+  padding: 0;
+  margin: 0;
+}
+
+/* Estiliza os cartões dos elementos */
+.elements__card {
+  max-width: 282px;  /* Define a largura máxima do cartão */
+  height: 361px;  /* Define a altura do cartão */
+  position: relative;  /* Define posição relativa para permitir posicionamento absoluto dos filhos */
+  display: flex;  /* Utiliza flexbox para organizar o conteúdo interno */
+  flex-direction: column;  /* Alinha o conteúdo interno em uma coluna */
+  border-radius: 10px;  /* Define bordas arredondadas */
+  overflow: hidden;  /* Esconde o conteúdo que ultrapassar os limites do cartão */
+}
+
+/* Estiliza a imagem dos elementos */
+.elements__image {
+  max-width: 282px;  /* Define a largura máxima da imagem */
+  max-height: 282px;  /* Define a altura máxima da imagem */
+  width: 100%;  /* Define a largura da imagem para ocupar todo o espaço disponível */
+  height: 100%;  /* Define a altura da imagem para ocupar todo o espaço disponível */
+  cursor: pointer;  /* Define o cursor como ponteiro ao passar sobre a imagem */
+}
+
+/* Estiliza o ícone de exclusão da imagem */
+.elements__image-trash {
+  position: absolute;  /* Posiciona o ícone de forma absoluta */
+  top: 18px;  /* Define a posição superior do ícone */
+  right: 15px;  /* Define a posição à direita do ícone */
+  cursor: pointer;  /* Define o cursor como ponteiro ao passar sobre o ícone */
+}
+
+/* Adiciona efeito de opacidade ao passar o mouse sobre o ícone de exclusão */
+.elements__image-trash:hover {
+  opacity: 50%;
+}
+
+/* Estiliza a seção de texto dos elementos */
+.elements__text {
+  display: flex;  /* Utiliza flexbox para organizar o conteúdo interno */
+  justify-content: space-around;  /* Distribui o espaço igualmente ao redor dos itens */
+  align-items: center;  /* Centraliza os itens verticalmente */
+  background-color: #ffffff;  /* Define a cor de fundo branca */
+  max-height: 79px;  /* Define a altura máxima */
+}
+
+/* Estiliza o título dos elementos */
+.elements__title {
+  font-size: 24px;  /* Define o tamanho da fonte */
+  line-height: 29.05px;  /* Define a altura da linha */
+  font-weight: 900;  /* Define a espessura da fonte */
+  background-color: #ffffff;  /* Define a cor de fundo branca */
+  height: 79px;  /* Define a altura */
+  margin: 0;  /* Remove margem */
+  align-content: center;  /* Alinha o conteúdo ao centro */
+  text-overflow: ellipsis;  /* Adiciona reticências se o texto for muito longo */
+  white-space: nowrap;  /* Impede que o texto quebre em várias linhas */
+  overflow: hidden;  /* Esconde o texto que ultrapassar os limites */
+}
+
+/* Estiliza o ícone de like dos elementos */
+.elements__image-like {
+  cursor: pointer;  /* Define o cursor como ponteiro ao passar sobre o ícone */
+  align-self: center;  /* Alinha o ícone ao centro */
+}
+
+/* Adiciona efeito de opacidade ao passar o mouse sobre o ícone de like */
+.elements__image-like:hover {
+  opacity: 50%;
+}
+
+/* Define o estado ativo do ícone de like */
+.elements__image-like_active {
+  background-image: url(/images/Union.png);  /* Define a imagem de fundo do ícone ativo */
+}
+
+/* Estiliza o contêiner principal dos elementos para telas com largura máxima de 900px */
+@media screen and (max-width: 900px) {
+  .elements {
+    margin: 0 15px;  /* Adiciona margem horizontal de 15px */
+  }
+}
+
+/* Estiliza o contêiner principal dos elementos para telas com largura máxima de 780px */
+@media screen and (max-width: 780px) {
+  .elements {
+    grid-template-columns: repeat(2, 282px);  /* Cria duas colunas de largura fixa */
+    justify-content: center;  /* Centraliza as colunas */
+  }
+}
+
+/* Estiliza o contêiner principal dos elementos para telas com largura máxima de 590px */
+@media screen and (max-width: 590px) {
+  .elements {
+    display: grid;  /* Utiliza o CSS Grid Layout */
+    grid-template-columns: auto;  /* Cria uma única coluna de largura automática */
+    justify-content: center;  /* Centraliza a coluna */
+  }
+}

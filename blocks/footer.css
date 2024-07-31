@@ -1,0 +1,22 @@
+/* Estiliza o contêiner principal do rodapé */
+.footer {
+  max-width: 880px;  /* Define a largura máxima do rodapé */
+  margin: 0 auto;  /* Centraliza o rodapé horizontalmente */
+}
+
+/* Estiliza o texto de copyright no rodapé */
+.footer__copyright {
+  font-size: 18px;  /* Define o tamanho da fonte */
+  line-height: 21.78px;  /* Define a altura da linha */
+  font-weight: 400;  /* Define a espessura da fonte como normal */
+  color: #545454;  /* Define a cor do texto */
+  padding: 67px 0 60px;  /* Adiciona espaçamento superior de 67px e inferior de 60px */
+  margin: 0;  /* Remove margem */
+}
+
+/* Ajusta o texto de copyright para telas com largura máxima de 900px */
+@media screen and (max-width: 900px) {
+  .footer__copyright {
+    margin: 0 15px;  /* Adiciona margem horizontal de 15px */
+  }
+}
