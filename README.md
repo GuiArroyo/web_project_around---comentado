@@ -28,9 +28,9 @@ O arquivo HTML define a estrutura básica da página e inclui:
 * Rodapé (footer): Contém informações de copyright.
 * index.css
 
-* Arquivo de estilização CSS que define o visual da página.
+Arquivo de estilização CSS que define o visual da página.
 
-* Scripts JavaScript
+Scripts JavaScript
 
 * card.js: Contém funções para adicionar, remover e curtir cartões, além de visualizar imagens em tamanho maior.
 * Função cardAdd(name, link): Adiciona um novo cartão à página.
