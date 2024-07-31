@@ -53,4 +53,4 @@ Adicionar Cartão: Permite ao usuário adicionar novos cartões com título e im
 Visualizar Imagem: Permite ao usuário visualizar uma imagem em tamanho maior ao clicar no cartão.
 Remover Cartão: Permite ao usuário remover cartões da página.
 Curtir Cartão: Permite ao usuário marcar cartões com um "like".
-Validação de Formulários: Inclui validação para garantir que os campos de entrada estejam corretos antes da submissão.
+* Validação de Formulários: Inclui validação para garantir que os campos de entrada estejam corretos antes da submissão.
